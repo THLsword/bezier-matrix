@@ -85,6 +85,11 @@ curve1 = coons_points(np.linspace(0, 0, 100).reshape((100, 1)),np.linspace(0, 1,
 curve2 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(1, 1, 100).reshape((100, 1)),params)
 curve3 = coons_points(np.linspace(1, 1, 100).reshape((100, 1)),np.linspace(0, 1, 100).reshape((100, 1)),params)
 curve4 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(0, 0, 100).reshape((100, 1)),params)
+
+curve5 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(0.25, 0.25, 100).reshape((100, 1)),params)
+curve6 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(0.5, 0.5, 100).reshape((100, 1)),params)
+curve7 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(0.75, 0.75, 100).reshape((100, 1)),params)
+
 # print(curve.shape)
 
 # Plot the curve
@@ -94,5 +99,12 @@ ax.plot(curve1[:, 0], curve1[:, 1], curve1[:, 2])
 ax.plot(curve2[:, 0], curve2[:, 1], curve2[:, 2])
 ax.plot(curve3[:, 0], curve3[:, 1], curve3[:, 2])
 ax.plot(curve4[:, 0], curve4[:, 1], curve4[:, 2])
+
+ax.plot(curve5[:, 0], curve5[:, 1], curve5[:, 2])
+ax.plot(curve6[:, 0], curve6[:, 1], curve6[:, 2])
+ax.plot(curve7[:, 0], curve7[:, 1], curve7[:, 2])
+
+
+
 ax.scatter(params[:, 0], params[:, 1], params[:, 2], c='r')
 plt.show()
