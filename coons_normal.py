@@ -4,7 +4,7 @@
 #     du = np.array([1, 0])
 #     dv = np.array([0, 1])
 #     point = coons_points(u, v, patches)
-#     x_u = du @ coons_points(u, v, patches).reshape(3,1)
+#     x_u = du @ coons_points(u, v, patches)
 #     x_v = dv @ coons_points(u, v, patches)
 #     # Compute cross product
 #     n = np.cross(x_u, x_v)
