@@ -90,7 +90,8 @@ curve5 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(0.25,
 curve6 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(0.5, 0.5, 100).reshape((100, 1)),params)
 curve7 = coons_points(np.linspace(0, 1, 100).reshape((100, 1)),np.linspace(0.75, 0.75, 100).reshape((100, 1)),params)
 
-# print(curve.shape)
+# a_point = coons_points(np.array([0.1]), np.array([0.1]), params)
+# print(a_point)
 
 # Plot the curve
 fig = plt.figure()
